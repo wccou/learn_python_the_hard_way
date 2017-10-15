@@ -25,3 +25,12 @@ print b.number
 
 # Study this. This is how you pass a variable
 # from one class to another. You will need this
+class TheMultiplier(object):
+	def __init__(self, base):
+		self.base = base
+		
+	def do_it(self, m):
+		return m * self.base
+		
+x = TheMultiplier(a.number)
+print x.do_it(b.number)
